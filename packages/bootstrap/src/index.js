@@ -4,9 +4,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import * as Common from "@sm/common";
 
 const SearchExperience = React.lazy(() => {
-  return import(
-    /* webpackChunkName: 'search-experience' */ "@sm/search-experience"
-  );
+  return new Promise(resolve => {
+    setTimeout(
+      () =>
+        resolve(
+          import(
+            /* webpackChunkName: 'search-experience' */ "@sm/search-experience"
+          )
+        ),
+      3000
+    );
+  });
 });
 
 const ContentExperience = React.lazy(() => {
@@ -20,11 +28,11 @@ const Loading = <div>Loading...</div>;
 const App = ({ children }) => <div>App</div>;
 
 const Bootstrap = () => (
-  <Suspense fallback={Loading}>
-    <Router>
-      <div>
-        <div>Searchmetrics</div>
-        <Common.Navigation />
+  <Router>
+    <div>
+      <div>Searchmetrics</div>
+      <Common.Navigation />
+      <Suspense fallback={Loading}>
         <Switch>
           <Route
             path="/content-experience"
@@ -35,9 +43,9 @@ const Bootstrap = () => (
             render={() => <SearchExperience />}
           />
         </Switch>
-      </div>
-    </Router>
-  </Suspense>
+      </Suspense>
+    </div>
+  </Router>
 );
 
 const container = document.getElementById("react-root");
