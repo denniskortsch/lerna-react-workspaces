@@ -1,0 +1,14 @@
+{
+  "name": "@sm/content-experience",
+  "version": "1.0.0",
+  "main": "dist/content-experience.js",
+  "module": "src/index.js",
+  "dependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}

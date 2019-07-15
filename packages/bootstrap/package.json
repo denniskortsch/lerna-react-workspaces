@@ -1,0 +1,21 @@
+{
+  "name": "@sm/bootstrap",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@sm/common": "^1.0.0",
+    "@sm/search-experience": "^1.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^4.2.2"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --color",
+    "build": "webpack --mode production"
+  }
+}
