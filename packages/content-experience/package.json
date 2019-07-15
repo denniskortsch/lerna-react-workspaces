@@ -1,6 +1,6 @@
 {
   "name": "@sm/content-experience",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/content-experience.js",
   "module": "src/index.js",
   "dependencies": {

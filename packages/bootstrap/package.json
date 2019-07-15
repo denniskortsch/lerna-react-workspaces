@@ -1,6 +1,6 @@
 {
   "name": "@sm/bootstrap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "license": "MIT",
   "private": true,
@@ -8,8 +8,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@sm/common": "^1.0.0",
-    "@sm/search-experience": "^1.0.0",
+    "@sm/common": "^1.0.1",
+    "@sm/search-experience": "^1.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^4.2.2"
