@@ -2,7 +2,8 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "products/*"
   ],
   "devDependencies": {
     "@babel/cli": "^7.5.0",
