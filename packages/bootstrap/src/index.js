@@ -23,16 +23,12 @@ const ContentExperience = React.lazy(() => {
   );
 });
 
-const Loading = <div>Loading...</div>;
-
-const App = ({ children }) => <div>App</div>;
-
 const Bootstrap = () => (
   <Router>
     <div>
       <div>Searchmetrics</div>
       <Common.Navigation />
-      <Suspense fallback={Loading}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Switch>
           <Route
             path="/content-experience"
